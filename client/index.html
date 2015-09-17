@@ -1,0 +1,25 @@
+<head>
+  <title>Mongoose POS</title>
+</head>
+
+<body>
+  <div>Hello, world!</div>
+  {{> products}}
+</body>
+
+<template name="products">
+  <h1>Products</h1>
+  <ul>
+    {{#each products}}
+      <li>
+        {{>product}}
+      </li>
+    {{/each}}
+  </ul>
+</template>
+
+<template name="product">
+  <h3>{{description}}</h3>
+  <p>Price: ${{price}}</p>
+  <p>Type: {{itemType}}</p>
+</template>
