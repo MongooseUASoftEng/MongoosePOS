@@ -5,9 +5,30 @@
 <body>
   <div>Hello, world!</div>
   {{> employees}}
+  {{> tenderEntries}}
   {{> transactions}}
   {{> products}}
 </body>
+
+<template name="tenderEntries">
+<h1>Tender Entries</h1>
+  <ul>
+  {{#each tenderEntries}}
+    <li>
+      {{>Tender Entry}}
+    </li>
+  {{/each}}
+  </ul>
+</template>
+
+<template name="tenderEntry">
+  <h3>Tender Type: {{tenderType}}</h3>
+  <p>Record ID: {{_id}}</p>
+  <p>amount: {{amount}}</p>
+  <p>Transaction ID: {{transactionID}} </p>
+  <p>Product ID: {{productID}}</p>
+  <p>createdAt: {{createdAt}}</p>
+</template>
 
 <template name="transactions">
 <h1>Transactions</h1>
