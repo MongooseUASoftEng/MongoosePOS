@@ -6,8 +6,30 @@
   <div>Hello, world!</div>
   {{> employees}}
   {{> products}}
-  
+  {{> transactions}}
+
 </body>
+
+<template name="transactions">
+<h1>Transactions</h1>
+  <ul>
+  {{#each transactions}}
+    <li>
+      {{>transaction}}
+    </li>
+    {{/each}}
+  </ul>
+</template>
+
+<template name="transaction">
+  <h3>recordId: {{recordId}}</h3>
+  <p>cashierId: {{cashierId}}</p>
+  <p>amount: {{amount}}</p>
+  <p>transactionType: {{transactionType}} </p>
+  <p>parentId: {{parentId}}</p>
+  <p>createdAt: {{createdAt}}</p>
+</template>
+
 
 <template name="employees">
 <h1>Employees</h1>

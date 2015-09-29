@@ -6,7 +6,12 @@ Meteor.startup(function(){
     var fs = Meteor.npmRequire('fs');
 
     // Path to csv file
-    var file = process.env.PWD + '/server/data/products.csv';
+    if(process.env.OS=="Windows_NT"){
+      var file = process.env.PWD + '/../../../../../../server/data/products.csv';
+    }
+    else{
+      var file = process.env.PWD + '/server/data/products.csv';
+    }
 
     // Initialize callback function to parse data into MongoDB collection.
     var parser = CSVParse({delimiter: '\n'}, Meteor.bindEnvironment(function (err, data) {
