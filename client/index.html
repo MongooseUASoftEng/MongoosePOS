@@ -5,7 +5,7 @@
 <body>
   <div>Hello, world!</div>
   {{> employees}}
-  {{> tenderEntry}}
+  {{> tenderEntries}}
   {{> transactions}}
   {{> products}}
 </body>
@@ -15,7 +15,7 @@
   <ul>
   {{#each tenderEntries}}
     <li>
-      {{>Tender Entry}}
+      {{>tenderEntry}}
     </li>
   {{/each}}
   </ul>
