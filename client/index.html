@@ -5,9 +5,8 @@
 <body>
   <div>Hello, world!</div>
   {{> employees}}
-  {{> products}}
   {{> transactions}}
-
+  {{> products}}
 </body>
 
 <template name="transactions">
@@ -22,7 +21,7 @@
 </template>
 
 <template name="transaction">
-  <h3>recordId: {{recordId}}</h3>
+  <h3>Id: {{_id}}</h3>
   <p>cashierId: {{cashierId}}</p>
   <p>amount: {{amount}}</p>
   <p>transactionType: {{transactionType}} </p>
@@ -44,7 +43,6 @@
 
 <template name="employee">
   <h3>{{firstName}} {{lastName}}</h3>
-  <p>employeeId: {{employeeId}}</p>
   <p>isActive: {{isActive}}</p>
   <p>classification: {{classification}} </p>
   <p>password: {{password}}</p>

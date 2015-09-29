@@ -1,4 +1,4 @@
-Meteor.startup(function(){
+Meteor.startup(function () {
   // If this is the first time the project is being ran on this machine,
   // the products database will be empty.
   // Run this code to populate the database.
@@ -6,11 +6,11 @@ Meteor.startup(function(){
     var fs = Meteor.npmRequire('fs');
 
     // Path to csv file
-    if(process.env.OS=="Windows_NT"){
-      var file = process.env.PWD + '/../../../../../../server/data/products.csv';
-    }
-    else{
-      var file = process.env.PWD + '/server/data/products.csv';
+    var file;
+    if (process.env.OS === "Windows_NT") {
+      file = process.env.PWD + '/../../../../../../server/data/products.csv';
+    } else {
+      file = process.env.PWD + '/server/data/products.csv';
     }
 
     // Initialize callback function to parse data into MongoDB collection.
@@ -49,7 +49,7 @@ Meteor.startup(function(){
           try {
             // Call the insertProduct method.
             Meteor.call("insertProduct", product);
-          } catch (error) { }
+          } catch (error) { /* Ignore */ }
         }
       });
     }));
