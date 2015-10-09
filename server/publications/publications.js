@@ -4,7 +4,7 @@
 Meteor.publish(null, function () {
   return [
 		Employees.find(),
-		Products.find(),
+		Products.find({}, { limit: 5 }),
 		Transactions.find()
 	];
 });
