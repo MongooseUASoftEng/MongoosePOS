@@ -3,18 +3,24 @@
     var em = new EnumManager();
 
     // Add an enum to manage
-    em.add('test1', [
-      "a",
-      "b",
-      "c"
-    ]);
+    em.add({
+      name: 'test1',
+      values: [
+        "a",
+        "b",
+        "c"
+      ]
+    });
 
     // Add another enum
-    em.add('test2', [
-      "d",
-      "e",
-      "f"
-    ]);
+    em.add({
+      name: 'test2',
+      values: [
+        "d",
+        "e",
+        "f"
+      ]
+    });
 
     // Map a value to a key
     var key = em.map('test1', "b"); // => 1
@@ -44,7 +50,8 @@ Adds an enum to be managed. An enum is an object with a property of ```name``` a
 
     var em = new EnumManager();
 
-    em.add('test', {
+    em.add({
+      name: 'test',
       values: [
         "a",
         "b"
@@ -62,7 +69,8 @@ Returns the key of the value if a value(String) is passed in or returns the valu
 
     var em = new EnumManager();
 
-    em.add('test', {
+    em.add({
+      name: 'test',
       values: [
         "a",
         "b"
