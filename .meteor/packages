@@ -23,6 +23,7 @@ ejson
 spacebars
 check
 npm-container
+tinytest
 
 # 3rd party packages
 aldeed:collection2
@@ -31,3 +32,6 @@ meteorhacks:npm
 dsyko:meteor-node-csv
 csats:csv-parse
 momentjs:moment
+
+# Personal packages
+ijsnow:enum-manager
