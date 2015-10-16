@@ -11,26 +11,16 @@ You might want to do the Meteor tutorial on their site as well.
 Meteor is a platform for developing applications with node.js and MongoDB(They are working on getting PostgreSQL in there too).
 
 # Style
-Let's follow the official [Meteor Style Guide](https://github.com/meteor/meteor/wiki/Meteor-Style-Guide). This doesn't mean much but it keeps the code consistent and easy to read.
+Let's follow the official . This doesn't mean much but it keeps the code consistent and easy to read.
 
-# Packages
-### msavin:mongol
-Easily look at collections available on current page in the browser. Press ctrl+m to toggle it. (debug only)
+# Guides
 
-### npm-container
-Allows use of regular node packages. Used with meteorhacks:npm.
+### Style Guide
+1. [Meteor Style Guide.](https://github.com/meteor/meteor/wiki/Meteor-Style-Guide) This will help with clean coding by keeping our code consistent.
 
-### meteorhacks:npm
-This is why theres a "packages" directory in the project.
+### Flow Router
+1. [Docs](https://github.com/kadirahq/flow-router/)
+2. [Subscriptions](https://kadira.io/academy/meteor-routing-guide/content/subscriptions-and-data-management/with-blaze)
 
-### dsyko:meteor-node-csv
-Allows you to use the node csv package. I used this to read the .csv file.
-
-### csats:csv-parse
-Allows you to use the node  csv-parse package. Used with previous package to parse the data.
-
-### momentjs:moment
-Lightweight library for manipulating dates.
-
-### aldeed:collection2
-Package that takes care of validating data with schemas when inserting/updating mongo collections. You can also make schemas for normal objects.
+### Github
+1. [Branching](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
