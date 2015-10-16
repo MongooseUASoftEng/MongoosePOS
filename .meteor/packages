@@ -32,6 +32,8 @@ meteorhacks:npm
 dsyko:meteor-node-csv
 csats:csv-parse
 momentjs:moment
+kadira:flow-router
+kadira:blaze-layout
 
 # Personal packages
 ijsnow:enum-manager
