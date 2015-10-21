@@ -34,6 +34,7 @@ csats:csv-parse
 momentjs:moment
 kadira:flow-router
 kadira:blaze-layout
+chuikoff:bootstrap-4
 
 # Personal packages
 ijsnow:enum-manager

@@ -11,7 +11,7 @@ You might want to do the Meteor tutorial on their site as well.
 Meteor is a platform for developing applications with node.js and MongoDB(They are working on getting PostgreSQL in there too).
 
 # Style
-Let's follow the official . This doesn't mean much but it keeps the code consistent and easy to read.
+Let's follow the official [Meteor Style Guide.](https://github.com/meteor/meteor/wiki/Meteor-Style-Guide). This doesn't mean much but it keeps the code consistent and easy to read.
 
 # Guides
 
