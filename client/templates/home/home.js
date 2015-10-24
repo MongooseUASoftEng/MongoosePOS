@@ -7,7 +7,6 @@ Template.home.events({
       return;
     }
 
-    //FlowRouter.go('/ProductsExample?limit=' + limit.trim());
     FlowRouter.go('/SelectedProduct?searchedCode=' + searchedCode);
 
     // Prevent form default. (Reloading page);
