@@ -2,10 +2,6 @@ Template.selectedProduct.helpers({
   selectedProduct: function () {
     return Products.findOne();
   },
-
-  //productFound: function() {
-  //  returning Products.count();
-  //}
 });
 
 Template.selectedProduct.onCreated(function() {
