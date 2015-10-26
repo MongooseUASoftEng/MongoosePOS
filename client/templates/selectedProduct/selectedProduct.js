@@ -8,7 +8,7 @@ Template.selectedProduct.onCreated(function() {
   var self = this;
   // Subscribe to the data
   self.autorun(function() {
-    var searchedCode = Number(FlowRouter.getQueryParam('searchedCode'));
+    var searchedCode = Number(FlowRouter.getParam('searchedCode'));
     self.subscribe('selectedProduct', searchedCode);
   });
 });
