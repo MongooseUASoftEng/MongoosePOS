@@ -1,13 +1,13 @@
 Template.home.events({
-  "submit #productsExample": function(event, template){
-    var limit = $('#productsLimit').val();
+  "submit #searchingCode": function(event, template){
+    var searchedCode = $('#searchedCode').val();
 
-    if (!limit) {
-      alert('Enter the number of products you want to be published!');
+    if (!searchedCode) {
+      alert('Enter an item\'s look up code!');
       return;
     }
 
-    FlowRouter.go('/ProductsExample?limit=' + limit.trim());
+    FlowRouter.go('/Product/' + searchedCode);
 
     // Prevent form default. (Reloading page);
     return false;
