@@ -24,3 +24,4 @@ Let's follow the official [Meteor Style Guide.](https://github.com/meteor/meteor
 
 ### Github
 1. [Branching](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
+2. [Pro Git](https://git-scm.com/book/en/v2): A book on git that explains the ins and outs of it. Completely free, able to be viewed and downloaded in multiple file formats. Chapters 1-3 have the most relevant information related to our project.  
