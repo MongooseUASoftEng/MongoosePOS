@@ -25,3 +25,11 @@ Let's follow the official [Meteor Style Guide.](https://github.com/meteor/meteor
 ### Github
 1. [Branching](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
 2. [Pro Git](https://git-scm.com/book/en/v2): A book on git that explains the ins and outs of it. Completely free, able to be viewed and downloaded in multiple file formats. Chapters 1-3 have the most relevant information related to our project.  
+
+# Testing Pull Requests Locally
+### (Thanks to Henry)
+This checks out the branch you are wanting to test, merge it into master (as though we merged the pull request, but local), and switch to that branch.
+
+      $ git fetch origin
+    $ git checkout -b <branch-to-test> origin/branch-to-test
+    $ git merge master
