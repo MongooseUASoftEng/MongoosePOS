@@ -1,4 +1,4 @@
-<template name="selectedProduct">
+	<template name="selectedProduct">
   <h1>Selected Product:</h1>
     {{#if Template.subscriptionsReady}}
       {{#if selectedProduct}}
@@ -11,23 +11,6 @@
     {{else}}
       Loading...
     {{/if}}
-</template>
-
-<template name="currentTransactionEntries">
-
-  {{#if currentTransactionEntries}}
-    <ul>
-      <li>Quantity -- Product ID</li>
-      {{#each currentTransactionEntries}}
-        <li>{{quantity}} -- {{productId}}</li>
-      {{/each}}
-    </ul>
-  {{else}}
-    No entries yet!
-  {{/if}}
-
-
-
 </template>
 
 <template name="product">
