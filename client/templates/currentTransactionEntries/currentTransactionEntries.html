@@ -1,0 +1,15 @@
+<template name="currentTransactionEntries">
+
+  {{#if currentTransactionEntries}}
+  <h4>Current Transaction Entries</h4>
+    <ul>
+      <li>Quantity -- Product ID</li>
+      {{#each currentTransactionEntries}}
+        <li>{{quantity}} -- {{productId}}</li>
+      {{/each}}
+    </ul>
+  {{else}}
+    No entries yet!
+  {{/if}}
+
+</template>

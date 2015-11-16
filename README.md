@@ -11,7 +11,11 @@ You might want to do the Meteor tutorial on their site as well.
 Meteor is a platform for developing applications with node.js and MongoDB(They are working on getting PostgreSQL in there too).
 
 # Style
+<<<<<<< HEAD
 Let's follow the official [Meteor Style Guide.](https://github.com/meteor/meteor/wiki/Meteor-Style-Guide). This doesn't mean much but it keeps the code consistent and easy to read.
+=======
+Let's follow the official [Meteor Style Guide.](https://github.com/meteor/meteor/wiki/Meteor-Style-Guide) This doesn't mean much but it keeps the code consistent and easy to read.
+>>>>>>> master
 
 # Guides
 
@@ -24,3 +28,15 @@ Let's follow the official [Meteor Style Guide.](https://github.com/meteor/meteor
 
 ### Github
 1. [Branching](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
+<<<<<<< HEAD
+=======
+2. [Pro Git](https://git-scm.com/book/en/v2): A book on git that explains the ins and outs of it. Completely free, able to be viewed and downloaded in multiple file formats. Chapters 1-3 have the most relevant information related to our project.  
+
+# Testing Pull Requests Locally
+### (Thanks to Henry)
+This checks out the branch you are wanting to test, merge it into master (as though we merged the pull request, but local), and switch to that branch.
+
+    $ git fetch origin
+    $ git checkout -b <branch-to-test> origin/<branch-to-test>
+    $ git merge master
+>>>>>>> master
