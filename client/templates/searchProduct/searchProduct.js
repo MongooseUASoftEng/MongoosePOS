@@ -7,6 +7,8 @@ Template.searchProduct.events({
       return;
     }
 
+    document.getElementById("selectedProduct").style.height='300px';
+
     // FlowRouter.go('/Product/' + searchedCode);
 
     // Prevent form default. (Reloading page);
