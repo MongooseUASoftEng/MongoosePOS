@@ -7,7 +7,12 @@ Template.searchProduct.events({
       return;
     }
 
-    document.getElementById("selectedProduct").style.height='300px';
+    Blaze.render(Blaze.template.selectedProduct, $('selectedProductContainer').get(0));
+    document.getElementById("selectedProductContainer").style.height='300px';
+    Session.set("searchedCode", searchedCode);
+
+
+
 
     // FlowRouter.go('/Product/' + searchedCode);
 
