@@ -1,4 +1,7 @@
 <template name="transaction">
   {{> searchProduct}}
+  <div id="selectedProduct" style="max-height:0px; overflow:hidden">
+    {{> selectedProduct}}
+  </div>
   {{> currentTransactionEntries}}
 </template>

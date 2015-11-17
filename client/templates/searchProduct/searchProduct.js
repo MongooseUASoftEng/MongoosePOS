@@ -7,7 +7,7 @@ Template.searchProduct.events({
       return;
     }
 
-    FlowRouter.go('/Product/' + searchedCode);
+    // FlowRouter.go('/Product/' + searchedCode);
 
     // Prevent form default. (Reloading page);
     return false;
