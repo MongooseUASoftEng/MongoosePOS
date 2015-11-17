@@ -11,7 +11,9 @@ You might want to do the Meteor tutorial on their site as well.
 Meteor is a platform for developing applications with node.js and MongoDB(They are working on getting PostgreSQL in there too).
 
 # Style
+
 Let's follow the official [Meteor Style Guide.](https://github.com/meteor/meteor/wiki/Meteor-Style-Guide) This doesn't mean much but it keeps the code consistent and easy to read.
+
 
 # Guides
 
@@ -24,6 +26,7 @@ Let's follow the official [Meteor Style Guide.](https://github.com/meteor/meteor
 
 ### Github
 1. [Branching](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
+
 2. [Pro Git](https://git-scm.com/book/en/v2): A book on git that explains the ins and outs of it. Completely free, able to be viewed and downloaded in multiple file formats. Chapters 1-3 have the most relevant information related to our project.  
 
 # Testing Pull Requests Locally
