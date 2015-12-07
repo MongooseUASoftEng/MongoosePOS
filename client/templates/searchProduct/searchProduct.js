@@ -7,15 +7,12 @@ Template.searchProduct.events({
       return;
     }
 
-    Blaze.render(Blaze.template.selectedProduct, $('selectedProductContainer').get(0));
-    document.getElementById("selectedProductContainer").style.height='300px';
     Session.set("searchedCode", searchedCode);
-
-
+    document.getElementById("selectedProductContainer").style.height='300px';
+    // Blaze.render(Blaze.template.selectedProduct, $('selectedProductContainer').get(0)); //loads div
 
 
     // FlowRouter.go('/Product/' + searchedCode);
-
     // Prevent form default. (Reloading page);
     return false;
   }
