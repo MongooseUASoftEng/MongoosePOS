@@ -4,7 +4,7 @@ Template.selectedProduct.helpers({
   },
 });
 
-Template.selectedProduct.onRendered(function() {
+Template.selectedProduct.onCreated(function() {
   var self = this;
 
   // Subscribe to the data
@@ -12,5 +12,4 @@ Template.selectedProduct.onRendered(function() {
     var searchedCode = Session.get("searchedCode");
     self.subscribe('selectedProduct', searchedCode);
   });
-  return false;
 });

@@ -9,7 +9,7 @@ Template.searchProduct.events({
 
     Session.set("searchedCode", searchedCode);
     document.getElementById("selectedProductContainer").style.height='300px';
-    // Blaze.render(Blaze.template.selectedProduct, $('selectedProductContainer').get(0)); //loads div
+    Blaze.render(Blaze.Template.selectedProduct, $('#selectedProductContainer').get(0)); //loads div
 
 
     // FlowRouter.go('/Product/' + searchedCode);
