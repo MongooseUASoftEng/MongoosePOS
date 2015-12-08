@@ -6,9 +6,10 @@ Template.selectedProduct.helpers({
 
 Template.selectedProduct.onCreated(function() {
   var self = this;
+
   // Subscribe to the data
   self.autorun(function() {
-    var searchedCode = Number(FlowRouter.getParam('searchedCode'));
+    var searchedCode = Session.get("searchedCode");
     self.subscribe('selectedProduct', searchedCode);
   });
 });
