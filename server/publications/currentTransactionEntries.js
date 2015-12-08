@@ -1,4 +1,3 @@
-Meteor.publish("currentTransactionEntries", function(){
-  return TransactionEntries.find();
-});
- 
+// Meteor.publish("currentTransactionEntries", function (lookupCodes) {
+//   return Products.find();
+// });

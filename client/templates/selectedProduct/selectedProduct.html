@@ -1,20 +1,25 @@
 <template name="selectedProduct">
   <h1>Selected Product:</h1>
-    {{#if Template.subscriptionsReady}}
-      {{#if selectedProduct}}
-        {{#with selectedProduct}}
-          {{>product}}
-        {{/with}}
-      {{else}}
-        Sorry, no product with that code...
-      {{/if}}
+
+  {{#if Template.subscriptionsReady}}
+    {{#if selectedProduct}}
+      {{#with selectedProduct}}
+        {{>product}}
+      {{/with}}
     {{else}}
-      Loading...
+      Sorry, no product with that code...
     {{/if}}
-    <form id="addProductForm">
-      <button id="addProduct" class="btn btn-primary" type="submit">Add</button>
-      <button id="cancel" class="btn btn-default">Cancel</button>
-    </form>
+  {{else}}
+    Loading...
+  {{/if}}
+
+  <form id="addProductForm">
+    <label for="quantity"><strong>Quantity:</strong></label>
+    <input type="number" id="quantity" value="1">
+    <button id="addProduct" class="btn btn-primary" type="submit">Add</button>
+    <button class="btn btn-default cancel" type="button">Cancel</button>
+  </form>
+
 </template>
 
 <template name="product">

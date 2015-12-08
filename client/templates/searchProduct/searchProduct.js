@@ -8,7 +8,8 @@ Template.searchProduct.events({
     }
 
     Session.set("searchedCode", searchedCode);
-    document.getElementById("selectedProductContainer").style.height='500px';
+    //document.getElementById("selectedProductContainer").style.height='500px';
+    $('#selectedProductContainer').height('auto');
     Blaze.render(Blaze.Template.selectedProduct, $('#selectedProductContainer').get(0)); //loads div
 
 
