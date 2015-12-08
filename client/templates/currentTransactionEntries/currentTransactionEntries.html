@@ -3,9 +3,9 @@
   {{#if currentTransactionEntries}}
   <h4>Current Transaction Entries</h4>
     <ul>
-      <li>Quantity -- Product ID</li>
+      <li>Item -- Quantity</li>
       {{#each currentTransactionEntries}}
-        <li>{{quantity}} -- {{productId}}</li>
+        <li>{{title}} -- {{quantity}}</li>
       {{/each}}
     </ul>
   {{else}}
