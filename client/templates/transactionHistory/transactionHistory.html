@@ -1,0 +1,17 @@
+<template name="transactionHistory">
+  <h4>Transaction History</h4>
+  {{#if Template.subscriptionsReady}}
+    <table>
+      <tbody>
+        {{#each transactions}}
+          <tr>
+            <td>{{transactionType}}</td>:
+            <td>${{amount}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{else}}
+    Loading...
+  {{/if}}
+</template>

@@ -3,9 +3,13 @@
   {{#if currentTransactionEntries}}
   <h4>Current Transaction Entries</h4>
     <ul>
+<<<<<<< HEAD
       <h2 style="font-size: medium">Quantity -- Product ID</h2>
+=======
+      <li>Item -- Quantity</li>
+>>>>>>> master
       {{#each currentTransactionEntries}}
-        <li>{{quantity}} -- {{productId}}</li>
+        <li>{{title}} -- {{quantity}}</li>
       {{/each}}
     </ul>
   {{else}}
