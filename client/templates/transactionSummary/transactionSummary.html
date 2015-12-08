@@ -1,11 +1,13 @@
 <template name="transactionSummary">
-  <br><br>
-  {{> transaction}}
-  <h5>Transaction Total:</h5><br>
-  <h5>Payment Total:</h5>
-  <h1>---------------------</h1>
-  <h5>Remaining Balance:</h5>
-  <br>
-  <button id="completeTransaction" class="btn btn-primary" type ="submit">Complete Transaction</button><br>
-  <br>
+  <div class="container" id="summary">
+    <br><br>
+    {{> transaction}}
+    <h5>Transaction Total:</h5><br>
+    <h5>Payment Total:</h5>
+    <h1>---------------------</h1>
+    <h5>Remaining Balance:</h5>
+    <br>
+    <button id="completeTransaction" class="btn btn-primary" type ="submit">Complete Transaction</button><br>
+    <br>
+  </div>
 </template>
